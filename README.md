@@ -1,6 +1,6 @@
 # 🦁 Bob Marley Lives in Ibiza — Assets
 
-Imagens públicas para automação (N8N + Meta Graph API). 49 imagens.
+Imagens públicas para automação (N8N + Meta Graph API). 52 imagens.
 
 **Base URL:** `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/`
 
@@ -54,6 +54,9 @@ Imagens públicas para automação (N8N + Meta Graph API). 49 imagens.
 | `sofia-sofia-03-story-qr.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-03-story-qr.jpg` |
 | `sofia-sofia-04-comida-drink.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-04-comida-drink.jpg` |
 | `sofia-sofia-05-como-llegar.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-05-como-llegar.jpg` |
+| `sofia-sofia-06-sorteo.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-06-sorteo.jpg` |
+| `sofia-sofia-07-drink-onelove.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-07-drink-onelove.jpg` |
+| `sofia-sofia-08-countdown.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-08-countdown.jpg` |
 | `stories-story-backstage-template.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-backstage-template.jpg` |
 | `stories-story-save-date.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-save-date.jpg` |
 | `stories-story-tonight.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-tonight.jpg` |
