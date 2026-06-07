@@ -1,6 +1,6 @@
 # 🦁 Bob Marley Lives in Ibiza — Assets
 
-Imagens públicas para automação (N8N + Meta Graph API). 48 imagens.
+Imagens públicas para automação (N8N + Meta Graph API). 49 imagens.
 
 **Base URL:** `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/`
 
@@ -34,6 +34,7 @@ Imagens públicas para automação (N8N + Meta Graph API). 48 imagens.
 | `banda-real-R6-post-real-1x1.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R6-post-real-1x1.jpg` |
 | `banda-real-R7-capa-fb-real-16x9.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R7-capa-fb-real-16x9.jpg` |
 | `carrossel-carrossel-historia-1.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-1.jpg` |
+| `carrossel-carrossel-historia-2.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-2.jpg` |
 | `carrossel-carrossel-historia-3.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-3.jpg` |
 | `carrossel-carrossel-historia-4.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-4.jpg` |
 | `merch-merch-01-camiseta.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-01-camiseta.jpg` |
