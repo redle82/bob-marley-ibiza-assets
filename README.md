@@ -1,6 +1,6 @@
 # 🦁 Bob Marley Lives in Ibiza — Assets
 
-71 imagens públicas para automação.
+72 imagens públicas para automação.
 
 **Base URL:** `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/`
 
@@ -47,6 +47,7 @@
 | `feed-extra-feed-quote-medicina.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-quote-medicina.jpg` |
 | `feed-extra-feed-real-ibiza-EN.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-real-ibiza-EN.jpg` |
 | `feed-extra-feed-sunset.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-sunset.jpg` |
+| `feed-extra-flyer-2x3-extra.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-flyer-2x3-extra.jpg` |
 | `impressao-cartaz-A4-FINAL-qr.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-FINAL-qr.jpg` |
 | `impressao-cartaz-A4-base.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-base.jpg` |
 | `impressao-placa-mesa-FINAL-qr.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-placa-mesa-FINAL-qr.jpg` |
