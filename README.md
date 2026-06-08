@@ -1,6 +1,6 @@
 # 🦁 Bob Marley Lives in Ibiza — Assets
 
-Imagens públicas para automação (N8N + Meta Graph API). 52 imagens.
+62 imagens públicas para automação.
 
 **Base URL:** `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/`
 
@@ -37,6 +37,11 @@ Imagens públicas para automação (N8N + Meta Graph API). 52 imagens.
 | `carrossel-carrossel-historia-2.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-2.jpg` |
 | `carrossel-carrossel-historia-3.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-3.jpg` |
 | `carrossel-carrossel-historia-4.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-4.jpg` |
+| `carrossel-merch-merch-carrossel-1-capa.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-1-capa.jpg` |
+| `impressao-cartaz-A4-FINAL-qr.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-FINAL-qr.jpg` |
+| `impressao-cartaz-A4-base.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-base.jpg` |
+| `impressao-placa-mesa-FINAL-qr.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-placa-mesa-FINAL-qr.jpg` |
+| `impressao-placa-mesa-base.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-placa-mesa-base.jpg` |
 | `merch-merch-01-camiseta.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-01-camiseta.jpg` |
 | `merch-merch-02-bone.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-02-bone.jpg` |
 | `merch-merch-03-regata.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-03-regata.jpg` |
@@ -58,5 +63,10 @@ Imagens públicas para automação (N8N + Meta Graph API). 52 imagens.
 | `sofia-sofia-07-drink-onelove.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-07-drink-onelove.jpg` |
 | `sofia-sofia-08-countdown.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-08-countdown.jpg` |
 | `stories-story-backstage-template.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-backstage-template.jpg` |
+| `stories-story-enquete.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-enquete.jpg` |
+| `stories-story-manana.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-manana.jpg` |
+| `stories-story-reserva.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-reserva.jpg` |
+| `stories-story-sabado-reggae.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-sabado-reggae.jpg` |
 | `stories-story-save-date.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-save-date.jpg` |
 | `stories-story-tonight.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-tonight.jpg` |
+| `stories-story-ultima-semana.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-ultima-semana.jpg` |
