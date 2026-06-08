@@ -1,6 +1,6 @@
 # 🦁 Bob Marley Lives in Ibiza — Assets
 
-72 imagens públicas para automação.
+73 imagens públicas para automação.
 
 **Base URL:** `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/`
 
@@ -26,6 +26,7 @@
 | `18-flyer-premium-black-gold-4x5.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/18-flyer-premium-black-gold-4x5.jpg` |
 | `19-cartaz-vertical-2x3-ES.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/19-cartaz-vertical-2x3-ES.jpg` |
 | `20-qr-evento.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/20-qr-evento.jpg` |
+| `21-qr-linktree.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/21-qr-linktree.jpg` |
 | `banda-real-R1-cartaz-foto-real-4x5.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg` |
 | `banda-real-R2-popart-jahbless-4x5.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg` |
 | `banda-real-R3-story-foto-real-9x16.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R3-story-foto-real-9x16.jpg` |
