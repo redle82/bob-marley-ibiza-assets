@@ -1,6 +1,6 @@
 # 🦁 Bob Marley Lives in Ibiza — Assets
 
-62 imagens públicas para automação.
+68 imagens públicas para automação.
 
 **Base URL:** `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/`
 
@@ -38,6 +38,12 @@
 | `carrossel-carrossel-historia-3.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-3.jpg` |
 | `carrossel-carrossel-historia-4.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-4.jpg` |
 | `carrossel-merch-merch-carrossel-1-capa.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-1-capa.jpg` |
+| `feed-extra-feed-before-after.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-before-after.jpg` |
+| `feed-extra-feed-contrarian.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-contrarian.jpg` |
+| `feed-extra-feed-duo-emblem.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-duo-emblem.jpg` |
+| `feed-extra-feed-quote-medicina.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-quote-medicina.jpg` |
+| `feed-extra-feed-real-ibiza-EN.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-real-ibiza-EN.jpg` |
+| `feed-extra-feed-sunset.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-sunset.jpg` |
 | `impressao-cartaz-A4-FINAL-qr.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-FINAL-qr.jpg` |
 | `impressao-cartaz-A4-base.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-base.jpg` |
 | `impressao-placa-mesa-FINAL-qr.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-placa-mesa-FINAL-qr.jpg` |
