@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria Mestre · Bob Marley Lives in Ibiza</title>
+<style>
+  :root{--red:#D62828;--yellow:#F4B400;--green:#2A9D3E;--gold:#E8C766;--bg:#0d0d0d;--card:#171717;--cream:#F2E9D8;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Trebuchet MS',system-ui,sans-serif;background:var(--bg);color:var(--cream);padding:16px;}
+  .stripes{height:7px;border-radius:6px;margin-bottom:14px;background:linear-gradient(90deg,var(--red) 33%,var(--yellow) 33% 66%,var(--green) 66%);}
+  h1{font-size:22px;text-align:center;}
+  .sub{text-align:center;font-size:13px;opacity:.7;margin:4px 0 14px;}
+  .search{display:block;width:100%;max-width:480px;margin:0 auto 18px;padding:11px 14px;border-radius:10px;border:1px solid rgba(232,199,102,.3);background:var(--card);color:var(--cream);font-size:14px;}
+  h2{font-size:16px;margin:22px 0 10px;border-bottom:1px solid rgba(232,199,102,.2);padding-bottom:6px;}
+  .cnt{color:var(--gold);font-size:13px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;}
+  .g-card{background:var(--card);border:1px solid rgba(232,199,102,.2);border-radius:10px;overflow:hidden;position:relative;}
+  .g-card img{width:100%;display:block;aspect-ratio:1;object-fit:cover;background:#222;}
+  .g-name{font-size:9px;padding:6px;word-break:break-all;opacity:.7;}
+  .g-actions{display:flex;gap:4px;padding:0 6px 6px;}
+  .g-btn{flex:1;text-align:center;background:#2a2a2a;border:1px solid rgba(232,199,102,.3);border-radius:6px;padding:6px;font-size:13px;cursor:pointer;text-decoration:none;color:var(--cream);}
+  .g-btn:active{background:var(--gold);color:#0d0d0d;}
+  .g-btn.ok{background:var(--green);color:#fff;}
+  .footer{text-align:center;font-size:12px;opacity:.5;margin-top:24px;}
+</style>
+</head>
+<body>
+  <div class="stripes"></div>
+  <h1>🦁 Galeria Mestre</h1>
+  <p class="sub">Bob Marley Lives in Ibiza · 73 criativos · ⬇️ baixar · 🔗 copiar URL</p>
+  <input class="search" id="search" placeholder="🔎 Buscar (ex: story, merch, cartaz, sofia...)" oninput="filter(this.value)">
+  <section class="cat" data-cat="⭐ Banda Real"><h2>⭐ Banda Real <span class="cnt">7</span></h2><div class="grid"><div class="g-card" data-name="banda-real-r1-cartaz-foto-real-4x5.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" loading="lazy" alt="banda-real-R1-cartaz-foto-real-4x5.jpg">
+      <div class="g-name">banda-real-R1-cartaz-foto-real-4x5.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" download="banda-real-R1-cartaz-foto-real-4x5.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="banda-real-r2-popart-jahbless-4x5.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg" loading="lazy" alt="banda-real-R2-popart-jahbless-4x5.jpg">
+      <div class="g-name">banda-real-R2-popart-jahbless-4x5.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg" download="banda-real-R2-popart-jahbless-4x5.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="banda-real-r3-story-foto-real-9x16.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R3-story-foto-real-9x16.jpg" loading="lazy" alt="banda-real-R3-story-foto-real-9x16.jpg">
+      <div class="g-name">banda-real-R3-story-foto-real-9x16.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R3-story-foto-real-9x16.jpg" download="banda-real-R3-story-foto-real-9x16.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R3-story-foto-real-9x16.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="banda-real-r4-cartaz-trio-4x5.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R4-cartaz-trio-4x5.jpg" loading="lazy" alt="banda-real-R4-cartaz-trio-4x5.jpg">
+      <div class="g-name">banda-real-R4-cartaz-trio-4x5.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R4-cartaz-trio-4x5.jpg" download="banda-real-R4-cartaz-trio-4x5.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R4-cartaz-trio-4x5.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="banda-real-r5-story-branca-9x16.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R5-story-branca-9x16.jpg" loading="lazy" alt="banda-real-R5-story-branca-9x16.jpg">
+      <div class="g-name">banda-real-R5-story-branca-9x16.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R5-story-branca-9x16.jpg" download="banda-real-R5-story-branca-9x16.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R5-story-branca-9x16.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="banda-real-r6-post-real-1x1.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R6-post-real-1x1.jpg" loading="lazy" alt="banda-real-R6-post-real-1x1.jpg">
+      <div class="g-name">banda-real-R6-post-real-1x1.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R6-post-real-1x1.jpg" download="banda-real-R6-post-real-1x1.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R6-post-real-1x1.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="banda-real-r7-capa-fb-real-16x9.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R7-capa-fb-real-16x9.jpg" loading="lazy" alt="banda-real-R7-capa-fb-real-16x9.jpg">
+      <div class="g-name">banda-real-R7-capa-fb-real-16x9.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R7-capa-fb-real-16x9.jpg" download="banda-real-R7-capa-fb-real-16x9.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R7-capa-fb-real-16x9.jpg",this)'>🔗</button>
+      </div>
+    </div></div></section>
+<section class="cat" data-cat="📱 Stories"><h2>📱 Stories <span class="cnt">8</span></h2><div class="grid"><div class="g-card" data-name="stories-story-backstage-template.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-backstage-template.jpg" loading="lazy" alt="stories-story-backstage-template.jpg">
+      <div class="g-name">stories-story-backstage-template.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-backstage-template.jpg" download="stories-story-backstage-template.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-backstage-template.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="stories-story-enquete.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-enquete.jpg" loading="lazy" alt="stories-story-enquete.jpg">
+      <div class="g-name">stories-story-enquete.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-enquete.jpg" download="stories-story-enquete.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-enquete.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="stories-story-manana.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-manana.jpg" loading="lazy" alt="stories-story-manana.jpg">
+      <div class="g-name">stories-story-manana.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-manana.jpg" download="stories-story-manana.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-manana.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="stories-story-reserva.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-reserva.jpg" loading="lazy" alt="stories-story-reserva.jpg">
+      <div class="g-name">stories-story-reserva.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-reserva.jpg" download="stories-story-reserva.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-reserva.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="stories-story-sabado-reggae.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-sabado-reggae.jpg" loading="lazy" alt="stories-story-sabado-reggae.jpg">
+      <div class="g-name">stories-story-sabado-reggae.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-sabado-reggae.jpg" download="stories-story-sabado-reggae.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-sabado-reggae.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="stories-story-save-date.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-save-date.jpg" loading="lazy" alt="stories-story-save-date.jpg">
+      <div class="g-name">stories-story-save-date.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-save-date.jpg" download="stories-story-save-date.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-save-date.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="stories-story-tonight.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-tonight.jpg" loading="lazy" alt="stories-story-tonight.jpg">
+      <div class="g-name">stories-story-tonight.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-tonight.jpg" download="stories-story-tonight.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-tonight.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="stories-story-ultima-semana.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-ultima-semana.jpg" loading="lazy" alt="stories-story-ultima-semana.jpg">
+      <div class="g-name">stories-story-ultima-semana.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-ultima-semana.jpg" download="stories-story-ultima-semana.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/stories-story-ultima-semana.jpg",this)'>🔗</button>
+      </div>
+    </div></div></section>
+<section class="cat" data-cat="🏠 Sofia Gastrobar"><h2>🏠 Sofia Gastrobar <span class="cnt">9</span></h2><div class="grid"><div class="g-card" data-name="sofia-sofia-01-convite-ad.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-01-convite-ad.jpg" loading="lazy" alt="sofia-sofia-01-convite-ad.jpg">
+      <div class="g-name">sofia-sofia-01-convite-ad.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-01-convite-ad.jpg" download="sofia-sofia-01-convite-ad.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-01-convite-ad.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="sofia-sofia-02-reggae-thursday.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-02-reggae-thursday.jpg" loading="lazy" alt="sofia-sofia-02-reggae-thursday.jpg">
+      <div class="g-name">sofia-sofia-02-reggae-thursday.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-02-reggae-thursday.jpg" download="sofia-sofia-02-reggae-thursday.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-02-reggae-thursday.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="sofia-sofia-03-story-qr-final.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-03-story-qr-FINAL.jpg" loading="lazy" alt="sofia-sofia-03-story-qr-FINAL.jpg">
+      <div class="g-name">sofia-sofia-03-story-qr-FINAL.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-03-story-qr-FINAL.jpg" download="sofia-sofia-03-story-qr-FINAL.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-03-story-qr-FINAL.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="sofia-sofia-03-story-qr.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-03-story-qr.jpg" loading="lazy" alt="sofia-sofia-03-story-qr.jpg">
+      <div class="g-name">sofia-sofia-03-story-qr.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-03-story-qr.jpg" download="sofia-sofia-03-story-qr.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-03-story-qr.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="sofia-sofia-04-comida-drink.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-04-comida-drink.jpg" loading="lazy" alt="sofia-sofia-04-comida-drink.jpg">
+      <div class="g-name">sofia-sofia-04-comida-drink.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-04-comida-drink.jpg" download="sofia-sofia-04-comida-drink.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-04-comida-drink.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="sofia-sofia-05-como-llegar.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-05-como-llegar.jpg" loading="lazy" alt="sofia-sofia-05-como-llegar.jpg">
+      <div class="g-name">sofia-sofia-05-como-llegar.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-05-como-llegar.jpg" download="sofia-sofia-05-como-llegar.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-05-como-llegar.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="sofia-sofia-06-sorteo.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-06-sorteo.jpg" loading="lazy" alt="sofia-sofia-06-sorteo.jpg">
+      <div class="g-name">sofia-sofia-06-sorteo.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-06-sorteo.jpg" download="sofia-sofia-06-sorteo.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-06-sorteo.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="sofia-sofia-07-drink-onelove.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-07-drink-onelove.jpg" loading="lazy" alt="sofia-sofia-07-drink-onelove.jpg">
+      <div class="g-name">sofia-sofia-07-drink-onelove.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-07-drink-onelove.jpg" download="sofia-sofia-07-drink-onelove.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-07-drink-onelove.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="sofia-sofia-08-countdown.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-08-countdown.jpg" loading="lazy" alt="sofia-sofia-08-countdown.jpg">
+      <div class="g-name">sofia-sofia-08-countdown.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-08-countdown.jpg" download="sofia-sofia-08-countdown.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-08-countdown.jpg",this)'>🔗</button>
+      </div>
+    </div></div></section>
+<section class="cat" data-cat="🎠 Carrossel História"><h2>🎠 Carrossel História <span class="cnt">4</span></h2><div class="grid"><div class="g-card" data-name="carrossel-carrossel-historia-1.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-1.jpg" loading="lazy" alt="carrossel-carrossel-historia-1.jpg">
+      <div class="g-name">carrossel-carrossel-historia-1.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-1.jpg" download="carrossel-carrossel-historia-1.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-1.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="carrossel-carrossel-historia-2.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-2.jpg" loading="lazy" alt="carrossel-carrossel-historia-2.jpg">
+      <div class="g-name">carrossel-carrossel-historia-2.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-2.jpg" download="carrossel-carrossel-historia-2.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-2.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="carrossel-carrossel-historia-3.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-3.jpg" loading="lazy" alt="carrossel-carrossel-historia-3.jpg">
+      <div class="g-name">carrossel-carrossel-historia-3.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-3.jpg" download="carrossel-carrossel-historia-3.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-3.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="carrossel-carrossel-historia-4.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-4.jpg" loading="lazy" alt="carrossel-carrossel-historia-4.jpg">
+      <div class="g-name">carrossel-carrossel-historia-4.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-4.jpg" download="carrossel-carrossel-historia-4.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-4.jpg",this)'>🔗</button>
+      </div>
+    </div></div></section>
+<section class="cat" data-cat="👕 Carrossel Merch"><h2>👕 Carrossel Merch <span class="cnt">4</span></h2><div class="grid"><div class="g-card" data-name="carrossel-merch-merch-carrossel-1-capa.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-1-capa.jpg" loading="lazy" alt="carrossel-merch-merch-carrossel-1-capa.jpg">
+      <div class="g-name">carrossel-merch-merch-carrossel-1-capa.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-1-capa.jpg" download="carrossel-merch-merch-carrossel-1-capa.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-1-capa.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="carrossel-merch-merch-carrossel-2-textil.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-2-textil.jpg" loading="lazy" alt="carrossel-merch-merch-carrossel-2-textil.jpg">
+      <div class="g-name">carrossel-merch-merch-carrossel-2-textil.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-2-textil.jpg" download="carrossel-merch-merch-carrossel-2-textil.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-2-textil.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="carrossel-merch-merch-carrossel-3-accesorios.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-3-accesorios.jpg" loading="lazy" alt="carrossel-merch-merch-carrossel-3-accesorios.jpg">
+      <div class="g-name">carrossel-merch-merch-carrossel-3-accesorios.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-3-accesorios.jpg" download="carrossel-merch-merch-carrossel-3-accesorios.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-3-accesorios.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="carrossel-merch-merch-carrossel-4-cta.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-4-cta.jpg" loading="lazy" alt="carrossel-merch-merch-carrossel-4-cta.jpg">
+      <div class="g-name">carrossel-merch-merch-carrossel-4-cta.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-4-cta.jpg" download="carrossel-merch-merch-carrossel-4-cta.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-4-cta.jpg",this)'>🔗</button>
+      </div>
+    </div></div></section>
+<section class="cat" data-cat="🔥 Feed Extra"><h2>🔥 Feed Extra <span class="cnt">7</span></h2><div class="grid"><div class="g-card" data-name="feed-extra-feed-before-after.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-before-after.jpg" loading="lazy" alt="feed-extra-feed-before-after.jpg">
+      <div class="g-name">feed-extra-feed-before-after.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-before-after.jpg" download="feed-extra-feed-before-after.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-before-after.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="feed-extra-feed-contrarian.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-contrarian.jpg" loading="lazy" alt="feed-extra-feed-contrarian.jpg">
+      <div class="g-name">feed-extra-feed-contrarian.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-contrarian.jpg" download="feed-extra-feed-contrarian.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-contrarian.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="feed-extra-feed-duo-emblem.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-duo-emblem.jpg" loading="lazy" alt="feed-extra-feed-duo-emblem.jpg">
+      <div class="g-name">feed-extra-feed-duo-emblem.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-duo-emblem.jpg" download="feed-extra-feed-duo-emblem.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-duo-emblem.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="feed-extra-feed-quote-medicina.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-quote-medicina.jpg" loading="lazy" alt="feed-extra-feed-quote-medicina.jpg">
+      <div class="g-name">feed-extra-feed-quote-medicina.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-quote-medicina.jpg" download="feed-extra-feed-quote-medicina.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-quote-medicina.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="feed-extra-feed-real-ibiza-en.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-real-ibiza-EN.jpg" loading="lazy" alt="feed-extra-feed-real-ibiza-EN.jpg">
+      <div class="g-name">feed-extra-feed-real-ibiza-EN.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-real-ibiza-EN.jpg" download="feed-extra-feed-real-ibiza-EN.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-real-ibiza-EN.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="feed-extra-feed-sunset.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-sunset.jpg" loading="lazy" alt="feed-extra-feed-sunset.jpg">
+      <div class="g-name">feed-extra-feed-sunset.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-sunset.jpg" download="feed-extra-feed-sunset.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-feed-sunset.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="feed-extra-flyer-2x3-extra.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-flyer-2x3-extra.jpg" loading="lazy" alt="feed-extra-flyer-2x3-extra.jpg">
+      <div class="g-name">feed-extra-flyer-2x3-extra.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-flyer-2x3-extra.jpg" download="feed-extra-flyer-2x3-extra.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/feed-extra-flyer-2x3-extra.jpg",this)'>🔗</button>
+      </div>
+    </div></div></section>
+<section class="cat" data-cat="🖨️ Impressão"><h2>🖨️ Impressão <span class="cnt">4</span></h2><div class="grid"><div class="g-card" data-name="impressao-cartaz-a4-final-qr.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-FINAL-qr.jpg" loading="lazy" alt="impressao-cartaz-A4-FINAL-qr.jpg">
+      <div class="g-name">impressao-cartaz-A4-FINAL-qr.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-FINAL-qr.jpg" download="impressao-cartaz-A4-FINAL-qr.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-FINAL-qr.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="impressao-cartaz-a4-base.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-base.jpg" loading="lazy" alt="impressao-cartaz-A4-base.jpg">
+      <div class="g-name">impressao-cartaz-A4-base.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-base.jpg" download="impressao-cartaz-A4-base.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-cartaz-A4-base.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="impressao-placa-mesa-final-qr.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-placa-mesa-FINAL-qr.jpg" loading="lazy" alt="impressao-placa-mesa-FINAL-qr.jpg">
+      <div class="g-name">impressao-placa-mesa-FINAL-qr.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-placa-mesa-FINAL-qr.jpg" download="impressao-placa-mesa-FINAL-qr.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-placa-mesa-FINAL-qr.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="impressao-placa-mesa-base.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-placa-mesa-base.jpg" loading="lazy" alt="impressao-placa-mesa-base.jpg">
+      <div class="g-name">impressao-placa-mesa-base.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-placa-mesa-base.jpg" download="impressao-placa-mesa-base.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/impressao-placa-mesa-base.jpg",this)'>🔗</button>
+      </div>
+    </div></div></section>
+<section class="cat" data-cat="👕 Merch"><h2>👕 Merch <span class="cnt">11</span></h2><div class="grid"><div class="g-card" data-name="merch-merch-01-camiseta.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-01-camiseta.jpg" loading="lazy" alt="merch-merch-01-camiseta.jpg">
+      <div class="g-name">merch-merch-01-camiseta.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-01-camiseta.jpg" download="merch-merch-01-camiseta.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-01-camiseta.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="merch-merch-02-bone.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-02-bone.jpg" loading="lazy" alt="merch-merch-02-bone.jpg">
+      <div class="g-name">merch-merch-02-bone.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-02-bone.jpg" download="merch-merch-02-bone.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-02-bone.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="merch-merch-03-regata.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-03-regata.jpg" loading="lazy" alt="merch-merch-03-regata.jpg">
+      <div class="g-name">merch-merch-03-regata.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-03-regata.jpg" download="merch-merch-03-regata.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-03-regata.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="merch-merch-04-tote.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-04-tote.jpg" loading="lazy" alt="merch-merch-04-tote.jpg">
+      <div class="g-name">merch-merch-04-tote.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-04-tote.jpg" download="merch-merch-04-tote.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-04-tote.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="merch-merch-05-hoodie.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-05-hoodie.jpg" loading="lazy" alt="merch-merch-05-hoodie.jpg">
+      <div class="g-name">merch-merch-05-hoodie.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-05-hoodie.jpg" download="merch-merch-05-hoodie.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-05-hoodie.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="merch-merch-06-caneca.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-06-caneca.jpg" loading="lazy" alt="merch-merch-06-caneca.jpg">
+      <div class="g-name">merch-merch-06-caneca.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-06-caneca.jpg" download="merch-merch-06-caneca.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-06-caneca.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="merch-merch-07-stickers.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-07-stickers.jpg" loading="lazy" alt="merch-merch-07-stickers.jpg">
+      <div class="g-name">merch-merch-07-stickers.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-07-stickers.jpg" download="merch-merch-07-stickers.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-07-stickers.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="merch-merch-08-bandeira.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-08-bandeira.jpg" loading="lazy" alt="merch-merch-08-bandeira.jpg">
+      <div class="g-name">merch-merch-08-bandeira.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-08-bandeira.jpg" download="merch-merch-08-bandeira.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-08-bandeira.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="merch-merch-09-toalha.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-09-toalha.jpg" loading="lazy" alt="merch-merch-09-toalha.jpg">
+      <div class="g-name">merch-merch-09-toalha.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-09-toalha.jpg" download="merch-merch-09-toalha.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-09-toalha.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="merch-merch-10-pulseira.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-10-pulseira.jpg" loading="lazy" alt="merch-merch-10-pulseira.jpg">
+      <div class="g-name">merch-merch-10-pulseira.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-10-pulseira.jpg" download="merch-merch-10-pulseira.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-10-pulseira.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="merch-merch-11-camiseta-branca.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-11-camiseta-branca.jpg" loading="lazy" alt="merch-merch-11-camiseta-branca.jpg">
+      <div class="g-name">merch-merch-11-camiseta-branca.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-11-camiseta-branca.jpg" download="merch-merch-11-camiseta-branca.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-11-camiseta-branca.jpg",this)'>🔗</button>
+      </div>
+    </div></div></section>
+<section class="cat" data-cat="🎨 Principais"><h2>🎨 Principais <span class="cnt">19</span></h2><div class="grid"><div class="g-card" data-name="01-cartaz-flyer-4x5.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/01-cartaz-flyer-4x5.jpg" loading="lazy" alt="01-cartaz-flyer-4x5.jpg">
+      <div class="g-name">01-cartaz-flyer-4x5.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/01-cartaz-flyer-4x5.jpg" download="01-cartaz-flyer-4x5.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/01-cartaz-flyer-4x5.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="02-story-ig-9x16.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/02-story-ig-9x16.jpg" loading="lazy" alt="02-story-ig-9x16.jpg">
+      <div class="g-name">02-story-ig-9x16.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/02-story-ig-9x16.jpg" download="02-story-ig-9x16.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/02-story-ig-9x16.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="03-banner-lona-3x2.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/03-banner-lona-3x2.jpg" loading="lazy" alt="03-banner-lona-3x2.jpg">
+      <div class="g-name">03-banner-lona-3x2.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/03-banner-lona-3x2.jpg" download="03-banner-lona-3x2.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/03-banner-lona-3x2.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="04-template-reutilizavel-4x5.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/04-template-reutilizavel-4x5.jpg" loading="lazy" alt="04-template-reutilizavel-4x5.jpg">
+      <div class="g-name">04-template-reutilizavel-4x5.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/04-template-reutilizavel-4x5.jpg" download="04-template-reutilizavel-4x5.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/04-template-reutilizavel-4x5.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="05-cartaz-1978-restaurado.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/05-cartaz-1978-restaurado.jpg" loading="lazy" alt="05-cartaz-1978-restaurado.jpg">
+      <div class="g-name">05-cartaz-1978-restaurado.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/05-cartaz-1978-restaurado.jpg" download="05-cartaz-1978-restaurado.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/05-cartaz-1978-restaurado.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="06-logo-leao-macaco.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/06-logo-leao-macaco.jpg" loading="lazy" alt="06-logo-leao-macaco.jpg">
+      <div class="g-name">06-logo-leao-macaco.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/06-logo-leao-macaco.jpg" download="06-logo-leao-macaco.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/06-logo-leao-macaco.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="07-flyer-2x3-print.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/07-flyer-2x3-print.jpg" loading="lazy" alt="07-flyer-2x3-print.jpg">
+      <div class="g-name">07-flyer-2x3-print.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/07-flyer-2x3-print.jpg" download="07-flyer-2x3-print.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/07-flyer-2x3-print.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="08-bobmarley-popart-highres.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/08-bobmarley-popart-highres.jpg" loading="lazy" alt="08-bobmarley-popart-highres.jpg">
+      <div class="g-name">08-bobmarley-popart-highres.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/08-bobmarley-popart-highres.jpg" download="08-bobmarley-popart-highres.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/08-bobmarley-popart-highres.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="09-qr-sofia-gastrobar.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/09-qr-sofia-gastrobar.jpg" loading="lazy" alt="09-qr-sofia-gastrobar.jpg">
+      <div class="g-name">09-qr-sofia-gastrobar.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/09-qr-sofia-gastrobar.jpg" download="09-qr-sofia-gastrobar.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/09-qr-sofia-gastrobar.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="12-lona-flat-base.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/12-lona-flat-base.jpg" loading="lazy" alt="12-lona-flat-base.jpg">
+      <div class="g-name">12-lona-flat-base.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/12-lona-flat-base.jpg" download="12-lona-flat-base.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/12-lona-flat-base.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="13-lona-final-qr.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/13-LONA-FINAL-qr.jpg" loading="lazy" alt="13-LONA-FINAL-qr.jpg">
+      <div class="g-name">13-LONA-FINAL-qr.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/13-LONA-FINAL-qr.jpg" download="13-LONA-FINAL-qr.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/13-LONA-FINAL-qr.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="14-capa-facebook-16x9.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/14-capa-facebook-16x9.jpg" loading="lazy" alt="14-capa-facebook-16x9.jpg">
+      <div class="g-name">14-capa-facebook-16x9.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/14-capa-facebook-16x9.jpg" download="14-capa-facebook-16x9.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/14-capa-facebook-16x9.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="15-highlight-eventos.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/15-highlight-eventos.jpg" loading="lazy" alt="15-highlight-eventos.jpg">
+      <div class="g-name">15-highlight-eventos.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/15-highlight-eventos.jpg" download="15-highlight-eventos.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/15-highlight-eventos.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="16-flyer-en-4x5.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/16-flyer-EN-4x5.jpg" loading="lazy" alt="16-flyer-EN-4x5.jpg">
+      <div class="g-name">16-flyer-EN-4x5.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/16-flyer-EN-4x5.jpg" download="16-flyer-EN-4x5.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/16-flyer-EN-4x5.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="17-post-feed-1x1.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/17-post-feed-1x1.jpg" loading="lazy" alt="17-post-feed-1x1.jpg">
+      <div class="g-name">17-post-feed-1x1.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/17-post-feed-1x1.jpg" download="17-post-feed-1x1.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/17-post-feed-1x1.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="18-flyer-premium-black-gold-4x5.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/18-flyer-premium-black-gold-4x5.jpg" loading="lazy" alt="18-flyer-premium-black-gold-4x5.jpg">
+      <div class="g-name">18-flyer-premium-black-gold-4x5.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/18-flyer-premium-black-gold-4x5.jpg" download="18-flyer-premium-black-gold-4x5.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/18-flyer-premium-black-gold-4x5.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="19-cartaz-vertical-2x3-es.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/19-cartaz-vertical-2x3-ES.jpg" loading="lazy" alt="19-cartaz-vertical-2x3-ES.jpg">
+      <div class="g-name">19-cartaz-vertical-2x3-ES.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/19-cartaz-vertical-2x3-ES.jpg" download="19-cartaz-vertical-2x3-ES.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/19-cartaz-vertical-2x3-ES.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="20-qr-evento.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/20-qr-evento.jpg" loading="lazy" alt="20-qr-evento.jpg">
+      <div class="g-name">20-qr-evento.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/20-qr-evento.jpg" download="20-qr-evento.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/20-qr-evento.jpg",this)'>🔗</button>
+      </div>
+    </div>
+<div class="g-card" data-name="21-qr-linktree.jpg">
+      <img src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/21-qr-linktree.jpg" loading="lazy" alt="21-qr-linktree.jpg">
+      <div class="g-name">21-qr-linktree.jpg</div>
+      <div class="g-actions">
+        <a class="g-btn" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/21-qr-linktree.jpg" download="21-qr-linktree.jpg" target="_blank">⬇️</a>
+        <button class="g-btn" onclick='copyUrl("https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/21-qr-linktree.jpg",this)'>🔗</button>
+      </div>
+    </div></div></section>
+  <div class="footer">Todos os criativos num lugar · github.com/redle82/bob-marley-ibiza-assets</div>
+<script>
+  function copyUrl(u,btn){navigator.clipboard.writeText(u).then(()=>{btn.textContent='✅';btn.classList.add('ok');setTimeout(()=>{btn.textContent='🔗';btn.classList.remove('ok');},1500);});}
+  function filter(q){
+    q=q.toLowerCase().trim();
+    document.querySelectorAll('.cat').forEach(cat=>{
+      let any=false;
+      cat.querySelectorAll('.g-card').forEach(c=>{
+        let show=!q || c.dataset.name.includes(q) || cat.dataset.cat.toLowerCase().includes(q);
+        c.style.display=show?'':'none'; if(show) any=true;
+      });
+      cat.style.display=any?'':'none';
+    });
+  }
+</script>
+</body>
+</html>
