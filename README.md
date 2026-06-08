@@ -1,6 +1,6 @@
 # 🦁 Bob Marley Lives in Ibiza — Assets
 
-73 imagens públicas para automação.
+81 imagens públicas para automação.
 
 **Base URL:** `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/`
 
@@ -38,6 +38,11 @@
 | `carrossel-carrossel-historia-2.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-2.jpg` |
 | `carrossel-carrossel-historia-3.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-3.jpg` |
 | `carrossel-carrossel-historia-4.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-4.jpg` |
+| `carrossel-datos-datos-1.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-datos-datos-1.jpg` |
+| `carrossel-datos-datos-2.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-datos-datos-2.jpg` |
+| `carrossel-datos-datos-3.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-datos-datos-3.jpg` |
+| `carrossel-datos-datos-4.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-datos-datos-4.jpg` |
+| `carrossel-datos-datos-5.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-datos-datos-5.jpg` |
 | `carrossel-merch-merch-carrossel-1-capa.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-1-capa.jpg` |
 | `carrossel-merch-merch-carrossel-2-textil.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-2-textil.jpg` |
 | `carrossel-merch-merch-carrossel-3-accesorios.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-merch-merch-carrossel-3-accesorios.jpg` |
@@ -64,6 +69,9 @@
 | `merch-merch-09-toalha.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-09-toalha.jpg` |
 | `merch-merch-10-pulseira.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-10-pulseira.jpg` |
 | `merch-merch-11-camiseta-branca.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-11-camiseta-branca.jpg` |
+| `reels-thumbs-reel-backstage.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/reels-thumbs-reel-backstage.jpg` |
+| `reels-thumbs-reel-historia.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/reels-thumbs-reel-historia.jpg` |
+| `reels-thumbs-reel-pov.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/reels-thumbs-reel-pov.jpg` |
 | `sofia-sofia-01-convite-ad.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-01-convite-ad.jpg` |
 | `sofia-sofia-02-reggae-thursday.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-02-reggae-thursday.jpg` |
 | `sofia-sofia-03-story-qr-FINAL.jpg` | `https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-03-story-qr-FINAL.jpg` |
