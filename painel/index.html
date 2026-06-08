@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel de Publicação · Bob Marley Lives in Ibiza</title>
+<style>
+  :root{--red:#D62828;--yellow:#F4B400;--green:#2A9D3E;--gold:#E8C766;--bg:#0d0d0d;--card:#171717;--cream:#F2E9D8;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Trebuchet MS',system-ui,sans-serif;background:var(--bg);color:var(--cream);padding:18px;max-width:560px;margin:0 auto;}
+  .stripes{height:7px;border-radius:6px;margin-bottom:16px;background:linear-gradient(90deg,var(--red) 33%,var(--yellow) 33% 66%,var(--green) 66%);}
+  h1{font-size:22px;text-align:center;margin-bottom:4px;}
+  .sub{text-align:center;font-size:13px;opacity:.7;margin-bottom:6px;}
+  .progress{text-align:center;font-size:14px;color:var(--gold);font-weight:bold;margin-bottom:16px;}
+  .card{background:var(--card);border:1px solid rgba(232,199,102,.25);border-radius:14px;padding:14px;margin-bottom:18px;transition:opacity .3s;}
+  .card.done-card{opacity:.45;}
+  .card-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px;font-size:12px;}
+  .num{font-weight:bold;color:var(--gold);font-size:15px;}
+  .badge{color:#0d0d0d;font-weight:bold;padding:2px 8px;border-radius:999px;font-size:11px;}
+  .when{opacity:.7;}
+  .thumb{width:100%;border-radius:10px;display:block;margin-bottom:10px;background:#222;}
+  .caption{font-size:14px;line-height:1.5;background:#0e0e0e;border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:10px;margin-bottom:10px;white-space:pre-wrap;}
+  .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+  .btn{border:none;border-radius:10px;padding:10px 14px;font-weight:bold;font-size:13px;cursor:pointer;text-decoration:none;display:inline-block;}
+  .copy{background:var(--gold);color:#0d0d0d;}
+  .copy.ok{background:var(--green);color:#fff;}
+  .dl{background:#2a2a2a;color:var(--cream);border:1px solid rgba(232,199,102,.3);}
+  .done{margin-left:auto;font-size:13px;display:flex;align-items:center;gap:6px;cursor:pointer;}
+  .done input{width:18px;height:18px;}
+  .footer{text-align:center;font-size:12px;opacity:.5;margin-top:20px;line-height:1.6;}
+  .reset{background:none;border:1px solid rgba(255,255,255,.2);color:var(--cream);border-radius:8px;padding:6px 12px;font-size:12px;cursor:pointer;margin-top:8px;}
+</style>
+</head>
+<body>
+  <div class="stripes"></div>
+  <h1>🦁 Painel de Publicação</h1>
+  <p class="sub">Bob Marley Lives in Ibiza · 27 posts · copia, baixa, posta ✅</p>
+  <p class="progress" id="progress">0 / 27 publicados</p>
+  
+    <div class="card" data-id="1">
+      <div class="card-head">
+        <span class="num">#01</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-08 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/06-logo-leao-macaco.jpg" loading="lazy" alt="post 1">
+      <div class="caption" id="cap1">🦁 Algo grande viene al Sofia Gastrobar... 🔥 Prepárate Ibiza. #SofiaGastrobar #Ibiza #Reggae #ComingSoon</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83e\udd81 Algo grande viene al Sofia Gastrobar... \ud83d\udd25 Prep\u00e1rate Ibiza. #SofiaGastrobar #Ibiza #Reggae #ComingSoon", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/06-logo-leao-macaco.jpg" download="post-01.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(1, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="2">
+      <div class="card-head">
+        <span class="num">#02</span>
+        <span class="badge" style="background:#D62828">Jahbless (banda)</span>
+        <span class="when">📅 2026-06-08 · 19:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg" loading="lazy" alt="post 2">
+      <div class="caption" id="cap2">🎸 ¿Listos para revivir la leyenda? Pronto en Ibiza 🦁 #JahBless #ReggaeIbiza #BobMarley</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\udfb8 \u00bfListos para revivir la leyenda? Pronto en Ibiza \ud83e\udd81 #JahBless #ReggaeIbiza #BobMarley", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg" download="post-02.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(2, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="3">
+      <div class="card-head">
+        <span class="num">#03</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-09 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-1.jpg" loading="lazy" alt="post 3">
+      <div class="caption" id="cap3">¿Sabías que Bob Marley tocó en España UNA sola vez? 👀 Te contamos dónde... 👇 #BobMarley #Ibiza #Historia</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\u00bfSab\u00edas que Bob Marley toc\u00f3 en Espa\u00f1a UNA sola vez? \ud83d\udc40 Te contamos d\u00f3nde... \ud83d\udc47 #BobMarley #Ibiza #Historia", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-1.jpg" download="post-03.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(3, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="4">
+      <div class="card-head">
+        <span class="num">#04</span>
+        <span class="badge" style="background:#D62828">Jahbless (banda)</span>
+        <span class="when">📅 2026-06-10 · 19:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/08-bobmarley-popart-highres.jpg" loading="lazy" alt="post 4">
+      <div class="caption" id="cap4">El reggae no es música, es medicina 🦁 #JahBless #RootsReggae #Ibiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("El reggae no es m\u00fasica, es medicina \ud83e\udd81 #JahBless #RootsReggae #Ibiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/08-bobmarley-popart-highres.jpg" download="post-04.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(4, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="5">
+      <div class="card-head">
+        <span class="num">#05</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-11 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-01-convite-ad.jpg" loading="lazy" alt="post 5">
+      <div class="caption" id="cap5">🍹 Reggae + buena comida + atardecer = Sofia Gastrobar. Ven a vivir la Ibiza auténtica 🌴 #SofiaGastrobar #IbizaFood</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\udf79 Reggae + buena comida + atardecer = Sofia Gastrobar. Ven a vivir la Ibiza aut\u00e9ntica \ud83c\udf34 #SofiaGastrobar #IbizaFood", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-01-convite-ad.jpg" download="post-05.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(5, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="6">
+      <div class="card-head">
+        <span class="num">#06</span>
+        <span class="badge" style="background:#F4B400">DJ Goldmonkey</span>
+        <span class="when">📅 2026-06-12 · 19:00 · IG</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg" loading="lazy" alt="post 6">
+      <div class="caption" id="cap6">🐵 DJ Goldmonkey prepara algo especial para Ibiza... roots, dub &amp; classic reggae 🎶 #DJGoldmonkey #ReggaeIbiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83d\udc35 DJ Goldmonkey prepara algo especial para Ibiza... roots, dub & classic reggae \ud83c\udfb6 #DJGoldmonkey #ReggaeIbiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg" download="post-06.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(6, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="7">
+      <div class="card-head">
+        <span class="num">#07</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-13 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-02-reggae-thursday.jpg" loading="lazy" alt="post 7">
+      <div class="caption" id="cap7">Fin de semana en Ibiza = reggae en el Sofia 🦁 Vive el ambiente 🌴 #SofiaGastrobar #IbizaVibes</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("Fin de semana en Ibiza = reggae en el Sofia \ud83e\udd81 Vive el ambiente \ud83c\udf34 #SofiaGastrobar #IbizaVibes", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-02-reggae-thursday.jpg" download="post-07.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(7, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="8">
+      <div class="card-head">
+        <span class="num">#08</span>
+        <span class="badge" style="background:#D62828">Jahbless (banda)</span>
+        <span class="when">📅 2026-06-14 · 19:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" loading="lazy" alt="post 8">
+      <div class="caption" id="cap8">🎸 La leyenda de Bob Marley sigue sonando en Ibiza. Síguenos 🦁 #JahBless #BobMarley #Ibiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\udfb8 La leyenda de Bob Marley sigue sonando en Ibiza. S\u00edguenos \ud83e\udd81 #JahBless #BobMarley #Ibiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" download="post-08.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(8, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="9">
+      <div class="card-head">
+        <span class="num">#09</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-15 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" loading="lazy" alt="post 9">
+      <div class="caption" id="cap9">🦁🔥 ¡YA ES OFICIAL! BOB MARLEY LIVES IN IBIZA. JahBless and the Lion in Zion + DJ Goldmonkey 🐵 SÁBADO 28 JUNIO · 17:00 · Sofia Gastrobar · ENTRADA GRATUITA 🌴 Reserva 👉 +34 628 006 257 #SofiaGastrobar #BobMarley #Ibiza #Reggae</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83e\udd81\ud83d\udd25 \u00a1YA ES OFICIAL! BOB MARLEY LIVES IN IBIZA. JahBless and the Lion in Zion + DJ Goldmonkey \ud83d\udc35 S\u00c1BADO 28 JUNIO \u00b7 17:00 \u00b7 Sofia Gastrobar \u00b7 ENTRADA GRATUITA \ud83c\udf34 Reserva \ud83d\udc49 +34 628 006 257 #SofiaGastrobar #BobMarley #Ibiza #Reggae", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" download="post-09.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(9, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="10">
+      <div class="card-head">
+        <span class="num">#10</span>
+        <span class="badge" style="background:#D62828">Jahbless (banda)</span>
+        <span class="when">📅 2026-06-15 · 19:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R4-cartaz-trio-4x5.jpg" loading="lazy" alt="post 10">
+      <div class="caption" id="cap10">🎸 Confirmado! Tocamos en el @sofia_gastrobar_ibiza · SÁBADO 28 JUNIO · 17:00 🦁 BOB MARLEY LIVES IN IBIZA · Gratis #JahBless #ReggaeIbiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\udfb8 Confirmado! Tocamos en el @sofia_gastrobar_ibiza \u00b7 S\u00c1BADO 28 JUNIO \u00b7 17:00 \ud83e\udd81 BOB MARLEY LIVES IN IBIZA \u00b7 Gratis #JahBless #ReggaeIbiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R4-cartaz-trio-4x5.jpg" download="post-10.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(10, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="11">
+      <div class="card-head">
+        <span class="num">#11</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-16 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-1.jpg" loading="lazy" alt="post 11">
+      <div class="caption" id="cap11">📜 La historia: 28 junio 1978, Bob Marley en la Plaza de Toros de Ibiza. Su único concierto en España. 👇 #BobMarley #Ibiza1978</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83d\udcdc La historia: 28 junio 1978, Bob Marley en la Plaza de Toros de Ibiza. Su \u00fanico concierto en Espa\u00f1a. \ud83d\udc47 #BobMarley #Ibiza1978", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/carrossel-carrossel-historia-1.jpg" download="post-11.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(11, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="12">
+      <div class="card-head">
+        <span class="num">#12</span>
+        <span class="badge" style="background:#F4B400">DJ Goldmonkey</span>
+        <span class="when">📅 2026-06-17 · 19:00 · IG</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/18-flyer-premium-black-gold-4x5.jpg" loading="lazy" alt="post 12">
+      <div class="caption" id="cap12">🐵 DJ Goldmonkey en cabina · 28 junio · Sofia Gastrobar. Calentando la noche con roots &amp; dub 🎶 #DJGoldmonkey #Ibiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83d\udc35 DJ Goldmonkey en cabina \u00b7 28 junio \u00b7 Sofia Gastrobar. Calentando la noche con roots & dub \ud83c\udfb6 #DJGoldmonkey #Ibiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/18-flyer-premium-black-gold-4x5.jpg" download="post-12.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(12, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="13">
+      <div class="card-head">
+        <span class="num">#13</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-18 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/19-cartaz-vertical-2x3-ES.jpg" loading="lazy" alt="post 13">
+      <div class="caption" id="cap13">🎟️ ENTRADA GRATUITA · SÁBADO 28 JUNIO · 17:00. Reggae en vivo junto al mar 🌴 Sofia Gastrobar #SofiaGastrobar #ReggaeIbiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\udf9f\ufe0f ENTRADA GRATUITA \u00b7 S\u00c1BADO 28 JUNIO \u00b7 17:00. Reggae en vivo junto al mar \ud83c\udf34 Sofia Gastrobar #SofiaGastrobar #ReggaeIbiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/19-cartaz-vertical-2x3-ES.jpg" download="post-13.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(13, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="14">
+      <div class="card-head">
+        <span class="num">#14</span>
+        <span class="badge" style="background:#D62828">Jahbless (banda)</span>
+        <span class="when">📅 2026-06-19 · 19:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R4-cartaz-trio-4x5.jpg" loading="lazy" alt="post 14">
+      <div class="caption" id="cap14">🎸 Conoce a la banda: Jahbless and the Lion in Zion, reggae auténtico made in Ibiza 🦁 28 junio · Sofia Gastrobar #JahBless</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\udfb8 Conoce a la banda: Jahbless and the Lion in Zion, reggae aut\u00e9ntico made in Ibiza \ud83e\udd81 28 junio \u00b7 Sofia Gastrobar #JahBless", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R4-cartaz-trio-4x5.jpg" download="post-14.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(14, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="15">
+      <div class="card-head">
+        <span class="num">#15</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-20 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/16-flyer-EN-4x5.jpg" loading="lazy" alt="post 15">
+      <div class="caption" id="cap15">🇬🇧 BOB MARLEY LIVES IN IBIZA at Sofia Gastrobar! Live reggae · SAT 28 JUNE · 17:00 · Free entry 🌴 #SofiaGastrobar #BobMarley #Ibiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\uddec\ud83c\udde7 BOB MARLEY LIVES IN IBIZA at Sofia Gastrobar! Live reggae \u00b7 SAT 28 JUNE \u00b7 17:00 \u00b7 Free entry \ud83c\udf34 #SofiaGastrobar #BobMarley #Ibiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/16-flyer-EN-4x5.jpg" download="post-15.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(15, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="16">
+      <div class="card-head">
+        <span class="num">#16</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-21 · 19:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-01-camiseta.jpg" loading="lazy" alt="post 16">
+      <div class="caption" id="cap16">🍹👕 ¡Habrá merch oficial! Camisetas, gorras y más del evento 🦁 28 junio · Sofia Gastrobar #SofiaGastrobar #Merch #BobMarley</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\udf79\ud83d\udc55 \u00a1Habr\u00e1 merch oficial! Camisetas, gorras y m\u00e1s del evento \ud83e\udd81 28 junio \u00b7 Sofia Gastrobar #SofiaGastrobar #Merch #BobMarley", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/merch-merch-01-camiseta.jpg" download="post-16.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(16, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="17">
+      <div class="card-head">
+        <span class="num">#17</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-22 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" loading="lazy" alt="post 17">
+      <div class="caption" id="cap17">🔥 ¡FALTA 1 SEMANA! BOB MARLEY LIVES IN IBIZA · SÁBADO 28 JUNIO · 17:00 · Sofia Gastrobar · Gratis. ¿Ya tienes plan? 🦁 #SofiaGastrobar #Ibiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83d\udd25 \u00a1FALTA 1 SEMANA! BOB MARLEY LIVES IN IBIZA \u00b7 S\u00c1BADO 28 JUNIO \u00b7 17:00 \u00b7 Sofia Gastrobar \u00b7 Gratis. \u00bfYa tienes plan? \ud83e\udd81 #SofiaGastrobar #Ibiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" download="post-17.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(17, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="18">
+      <div class="card-head">
+        <span class="num">#18</span>
+        <span class="badge" style="background:#D62828">Jahbless (banda)</span>
+        <span class="when">📅 2026-06-23 · 19:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg" loading="lazy" alt="post 18">
+      <div class="caption" id="cap18">🎸 Una semana para revivir la leyenda 🦁 Etiqueta a quien traerías 👇 28 junio · Sofia Gastrobar #JahBless #BobMarley</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\udfb8 Una semana para revivir la leyenda \ud83e\udd81 Etiqueta a quien traer\u00edas \ud83d\udc47 28 junio \u00b7 Sofia Gastrobar #JahBless #BobMarley", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg" download="post-18.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(18, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="19">
+      <div class="card-head">
+        <span class="num">#19</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-24 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-01-convite-ad.jpg" loading="lazy" alt="post 19">
+      <div class="caption" id="cap19">🌴 Imagina: reggae en vivo, atardecer en Ibiza, buena gente. Eso es el 28 en el Sofia 🦁 #SofiaGastrobar #ReggaeIbiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\udf34 Imagina: reggae en vivo, atardecer en Ibiza, buena gente. Eso es el 28 en el Sofia \ud83e\udd81 #SofiaGastrobar #ReggaeIbiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/sofia-sofia-01-convite-ad.jpg" download="post-19.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(19, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="20">
+      <div class="card-head">
+        <span class="num">#20</span>
+        <span class="badge" style="background:#F4B400">DJ Goldmonkey</span>
+        <span class="when">📅 2026-06-25 · 19:00 · IG</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/18-flyer-premium-black-gold-4x5.jpg" loading="lazy" alt="post 20">
+      <div class="caption" id="cap20">🐵 3 días! DJ Goldmonkey + Jahbless · 28 junio · Sofia Gastrobar 🎶 #DJGoldmonkey #ReggaeIbiza #Ibiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83d\udc35 3 d\u00edas! DJ Goldmonkey + Jahbless \u00b7 28 junio \u00b7 Sofia Gastrobar \ud83c\udfb6 #DJGoldmonkey #ReggaeIbiza #Ibiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/18-flyer-premium-black-gold-4x5.jpg" download="post-20.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(20, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="21">
+      <div class="card-head">
+        <span class="num">#21</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-26 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/17-post-feed-1x1.jpg" loading="lazy" alt="post 21">
+      <div class="caption" id="cap21">🔥 ¡PASADO MAÑANA! SÁBADO 28 JUNIO · 17:00 · Sofia Gastrobar · ENTRADA GRATUITA 🦁 Reserva tu mesa 👉 +34 628 006 257 #SofiaGastrobar #BobMarley</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83d\udd25 \u00a1PASADO MA\u00d1ANA! S\u00c1BADO 28 JUNIO \u00b7 17:00 \u00b7 Sofia Gastrobar \u00b7 ENTRADA GRATUITA \ud83e\udd81 Reserva tu mesa \ud83d\udc49 +34 628 006 257 #SofiaGastrobar #BobMarley", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/17-post-feed-1x1.jpg" download="post-21.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(21, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="22">
+      <div class="card-head">
+        <span class="num">#22</span>
+        <span class="badge" style="background:#D62828">Jahbless (banda)</span>
+        <span class="when">📅 2026-06-26 · 19:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R4-cartaz-trio-4x5.jpg" loading="lazy" alt="post 22">
+      <div class="caption" id="cap22">🎸 ¡Faltan 2 días! ¿Vienes? 🙋🦁 28 junio · 17:00 · Sofia Gastrobar #JahBless #ReggaeIbiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\udfb8 \u00a1Faltan 2 d\u00edas! \u00bfVienes? \ud83d\ude4b\ud83e\udd81 28 junio \u00b7 17:00 \u00b7 Sofia Gastrobar #JahBless #ReggaeIbiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R4-cartaz-trio-4x5.jpg" download="post-22.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(22, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="23">
+      <div class="card-head">
+        <span class="num">#23</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-27 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" loading="lazy" alt="post 23">
+      <div class="caption" id="cap23">⏰ ¡MAÑANA! BOB MARLEY LIVES IN IBIZA · 17:00 · Sofia Gastrobar 🦁 No te lo pierdas. Entrada gratuita 🌴 #SofiaGastrobar #ReggaeIbiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\u23f0 \u00a1MA\u00d1ANA! BOB MARLEY LIVES IN IBIZA \u00b7 17:00 \u00b7 Sofia Gastrobar \ud83e\udd81 No te lo pierdas. Entrada gratuita \ud83c\udf34 #SofiaGastrobar #ReggaeIbiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" download="post-23.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(23, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="24">
+      <div class="card-head">
+        <span class="num">#24</span>
+        <span class="badge" style="background:#D62828">Jahbless (banda)</span>
+        <span class="when">📅 2026-06-27 · 19:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg" loading="lazy" alt="post 24">
+      <div class="caption" id="cap24">🎸 ¡Mañana tocamos! 🦁 28 junio · 17:00 · @sofia_gastrobar_ibiza · Gratis. Trae a tu gente 🙏 #JahBless #BobMarley</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83c\udfb8 \u00a1Ma\u00f1ana tocamos! \ud83e\udd81 28 junio \u00b7 17:00 \u00b7 @sofia_gastrobar_ibiza \u00b7 Gratis. Trae a tu gente \ud83d\ude4f #JahBless #BobMarley", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R2-popart-jahbless-4x5.jpg" download="post-24.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(24, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="25">
+      <div class="card-head">
+        <span class="num">#25</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-28 · 10:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" loading="lazy" alt="post 25">
+      <div class="caption" id="cap25">🔥 HOY · BOB MARLEY LIVES IN IBIZA · 17:00 · Sofia Gastrobar 🦁 Reggae en vivo + DJ Goldmonkey · ENTRADA GRATUITA · Te esperamos 🙏🌴 #SofiaGastrobar #ReggaeTonight #Ibiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83d\udd25 HOY \u00b7 BOB MARLEY LIVES IN IBIZA \u00b7 17:00 \u00b7 Sofia Gastrobar \ud83e\udd81 Reggae en vivo + DJ Goldmonkey \u00b7 ENTRADA GRATUITA \u00b7 Te esperamos \ud83d\ude4f\ud83c\udf34 #SofiaGastrobar #ReggaeTonight #Ibiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R1-cartaz-foto-real-4x5.jpg" download="post-25.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(25, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="26">
+      <div class="card-head">
+        <span class="num">#26</span>
+        <span class="badge" style="background:#D62828">Jahbless (banda)</span>
+        <span class="when">📅 2026-06-28 · 15:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R4-cartaz-trio-4x5.jpg" loading="lazy" alt="post 26">
+      <div class="caption" id="cap26">⏰ ¡En 2 horas! 17:00 · Sofia Gastrobar 🦁 La leyenda vuelve a sonar 🎸 Ven ya 🌴 #JahBless #ReggaeIbiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\u23f0 \u00a1En 2 horas! 17:00 \u00b7 Sofia Gastrobar \ud83e\udd81 La leyenda vuelve a sonar \ud83c\udfb8 Ven ya \ud83c\udf34 #JahBless #ReggaeIbiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R4-cartaz-trio-4x5.jpg" download="post-26.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(26, this)"> Publicado</label>
+      </div>
+    </div>
+
+    <div class="card" data-id="27">
+      <div class="card-head">
+        <span class="num">#27</span>
+        <span class="badge" style="background:#2A9D3E">Sofia Gastrobar</span>
+        <span class="when">📅 2026-06-29 · 13:00 · IG,FB</span>
+      </div>
+      <img class="thumb" src="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R3-story-foto-real-9x16.jpg" loading="lazy" alt="post 27">
+      <div class="caption" id="cap27">🙏 ¡GRACIAS IBIZA! Una noche mágica de reggae en el Sofia 🦁 Esto se repite — síguenos para el próximo Reggae Thursday 🎸 #SofiaGastrobar #OneLove #ReggaeIbiza</div>
+      <div class="actions">
+        <button class="btn copy" onclick='copyText("\ud83d\ude4f \u00a1GRACIAS IBIZA! Una noche m\u00e1gica de reggae en el Sofia \ud83e\udd81 Esto se repite \u2014 s\u00edguenos para el pr\u00f3ximo Reggae Thursday \ud83c\udfb8 #SofiaGastrobar #OneLove #ReggaeIbiza", this)'>📋 Copiar legenda</button>
+        <a class="btn dl" href="https://raw.githubusercontent.com/redle82/bob-marley-ibiza-assets/main/img/banda-real-R3-story-foto-real-9x16.jpg" download="post-27.jpg" target="_blank">⬇️ Baixar imagem</a>
+        <label class="done"><input type="checkbox" onchange="toggleDone(27, this)"> Publicado</label>
+      </div>
+    </div>
+  <div class="footer">
+    Como usar: 📋 copia a legenda · ⬇️ baixa a imagem · posta no IG/FB · marca ✅<br>
+    O progresso fica salvo neste navegador.<br>
+    <button class="reset" onclick="if(confirm('Limpar progresso?')){localStorage.clear();location.reload();}">↺ Resetar progresso</button>
+  </div>
+<script>
+  function copyText(t, btn){
+    navigator.clipboard.writeText(t).then(()=>{
+      btn.textContent='✅ Copiado!'; btn.classList.add('ok');
+      setTimeout(()=>{btn.textContent='📋 Copiar legenda'; btn.classList.remove('ok');},1800);
+    });
+  }
+  function toggleDone(id, cb){
+    localStorage.setItem('post'+id, cb.checked?'1':'0');
+    cb.closest('.card').classList.toggle('done-card', cb.checked);
+    updateProgress();
+  }
+  function updateProgress(){
+    let total=27, done=0;
+    for(let i=1;i<=total;i++) if(localStorage.getItem('post'+i)==='1') done++;
+    document.getElementById('progress').textContent=done+' / '+total+' publicados';
+  }
+  // restaurar estado
+  document.querySelectorAll('.card').forEach(c=>{
+    let id=c.dataset.id;
+    if(localStorage.getItem('post'+id)==='1'){
+      let cb=c.querySelector('input[type=checkbox]'); cb.checked=true; c.classList.add('done-card');
+    }
+  });
+  updateProgress();
+</script>
+</body>
+</html>
